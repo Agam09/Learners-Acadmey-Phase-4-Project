@@ -1,0 +1,25 @@
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <th>ID</th>
+            <th>Name</th>
+        </tr> 
+<tr *ngFor="let c of class">
+    <td>{{c.classId}}</td>
+    <td>{{c.className}}</td> 
+</tr>    
+</table>
+</div>
+<br/>
+<div>
+    <h3>Update Class</h3>
+</div>   
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <td><input type="text" [(ngModel)]="C.classId" placeholder="Enter Class Id"></td>
+            <td><input type="text" [(ngModel)]="C.className" placeholder="Enter Class Name"></td>
+        </tr>
+    </table>
+    <button (click)="updateClass()">update</button>
+</div>

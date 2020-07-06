@@ -1,0 +1,26 @@
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+                <th>
+                    SubjectId
+                </th>
+                <th>
+                    SubjectName
+                </th>
+              
+            </tr>  
+            <tr *ngFor="let subject of subjects">
+                <td>{{subject.subjectId}}</td>
+                <td>{{subject.subjectName}}</td>
+             
+            </tr>   
+        </table>
+    </div>
+<div>
+    <h3> Delete Subject By ID</h3>
+</div>
+<div>
+<input type="number" [(ngModel)]="subjectId"/>
+<button (click)="removeSubjectById()">Remove Subject By Id</button>
+</div>
+

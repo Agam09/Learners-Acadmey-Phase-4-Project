@@ -1,0 +1,23 @@
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+                <th>
+                    ClassId
+                </th>
+                <th>
+                    ClassName
+                </th>
+                
+            </tr>  
+            <tr *ngFor="let class of c">
+                <td>{{class.classId}}</td>
+                <td>{{class.className}}</td>
+                
+            </tr>   
+        </table>
+    </div>
+    <div>
+    <h3>Delete Class By Id</h3>
+    <input type="number" [(ngModel)]="id"/>
+    <button (click)="deleteClass()">Delete Class By Id</button>
+    </div>

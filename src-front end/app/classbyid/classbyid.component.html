@@ -1,0 +1,20 @@
+<div>
+    <h3>Class By ID</h3>
+</div>
+<div>
+<input type="number" [(ngModel)]="id"/>
+<button (click)="getClassById()">Fetch Class By Id</button>
+</div>
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr *ngFor="let c of classes">
+            <td>{{c.classId}}</td>
+            <td>{{c.className}}</td>
+        </tr>
+    </table>
+</div>
+

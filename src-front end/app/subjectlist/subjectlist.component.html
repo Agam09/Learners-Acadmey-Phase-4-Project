@@ -1,0 +1,15 @@
+<div>
+    <h3>Subject List</h3>
+</div>
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr *ngFor="let subject of subjects">
+            <td>{{subject.subjectId}}</td>
+            <td>{{subject.subjectName}}</td>
+        </tr>
+    </table>
+</div>

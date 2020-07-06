@@ -1,0 +1,15 @@
+<div>
+    <h3>Add Teacher</h3>
+</div>
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <td><input type="text" [(ngModel)]="teacher.name" placeholder="Enter Teacher Name"></td>       
+            <td><input type="text" [(ngModel)]="teacher.address" placeholder="Enter Teacher address"></td>
+            <td><input type="text" [(ngModel)]="teacher.contact" placeholder="Enter Teacher contact"></td>
+            <td><input type="text" [(ngModel)]="teacher.Specialized" placeholder="Enter Teacher Specialized"></td>
+        </tr>
+    </table>
+    <button (click)="createTeacher()">Create</button>
+</div>
+

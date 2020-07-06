@@ -1,0 +1,19 @@
+<div>
+    <h3>Subject By ID</h3>
+</div>
+<div>
+<input type="number" [(ngModel)]="subjectId"/>
+<button (click)="getSubjectById()">Fetch Subject By Id</button>
+</div>
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr *ngFor="let subject of subjects">
+            <td>{{subject.subjectId}}</td>
+            <td>{{subject.subjectName}}</td>
+        </tr>
+    </table>
+</div>

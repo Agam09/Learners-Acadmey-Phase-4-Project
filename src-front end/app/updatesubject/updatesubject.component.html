@@ -1,0 +1,31 @@
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+    <th>
+        Subject Id
+    </th>
+    <th>
+        Subject Name
+    </th>
+ 
+</tr>  
+<tr *ngFor="let subject of subjects">
+    <td>{{subject.subjectId}}</td>
+    <td>{{subject.subjectName}}</td>
+    
+</tr>    
+</table>
+<br/>
+<div>
+    <h3>Update Subject</h3>
+</div>  
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <td><input type="text" [(ngModel)]="subject.SubjectId" placeholder="Enter Subject Id"></td>
+            <td><input type="text" [(ngModel)]="subject.SubjectName" placeholder="Enter Subject Name"></td>
+        </tr>
+    </table>  
+</div>
+<button (click)="updateSubject()">update</button>
+

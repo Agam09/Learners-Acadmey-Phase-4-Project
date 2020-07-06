@@ -1,0 +1,102 @@
+<div class="jumbotron text-center">
+  <h1>Welcome to {{title}}</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h2>Students</h2>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Menu
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/addStudent">Add Student</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/studentList"> All Student List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/studentById"> Search Student By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/deleteStudent"> Delete Student By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updateStudent"> Update Student By ID</a></li>
+        </ul>                               
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <h2>Subjects</h2>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Menu
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/addSubject">Add Subject</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/subjectList"> All Subject List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/subjectById"> Search Subject By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/deleteSubject"> Delete Subject By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updateSubject"> Update Subject By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/teacherSubject">Teacher & Subject List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updatesubTeacher">Update Teacher & Subject List</a></li>
+        </ul>                               
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <h2>Classes</h2>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Menu
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/addClass">Add Class</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/classList"> All Class List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/classById"> Search Class By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/deleteClass"> Delete Class By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updateClass"> Update Class By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/subjectClass">Subject & Class List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updatesubClass">Update Class & Subject List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updatestuClass">Update Class & student List</a></li>
+        </ul>                               
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <h2>Teachers</h2>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Menu
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/addTeacher">Add Teacher</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/teacherList"> All Teacher List</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/teacherById"> Search Teacher By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/deleteTeacher"> Delete Teacher By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/updateTeacher"> Update Teacher By ID</a></li>
+          <li class="divider"></li>
+          <li><a routerLink="/stuteachlist">Teacher & Student List</a></li> 
+          <li class="divider"></li>
+          <li><a routerLink="/updatestuTeacher">Update Teacher & student List</a></li>
+        </ul>                               
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="jumbotron text-center">
+  <router-outlet></router-outlet>
+</div>

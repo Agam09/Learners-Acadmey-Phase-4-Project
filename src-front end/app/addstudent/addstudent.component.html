@@ -1,0 +1,23 @@
+<div>
+    <h3>Add Student</h3>
+</div>
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <td><input type="text" [(ngModel)]="student.studentName" placeholder="Enter Student Name"></td>
+        </tr>
+        <tr>
+            <td>
+                <select [(ngModel)]="student.StudentCourse" name="subject" id="subject"  >
+                    
+                    <option *ngFor="let subject of subjects" value="{{subject.subjectName}}" >{{subject.subjectName}}</option>
+                   
+                  </select></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" [(ngModel)]="student.StudentPhone" placeholder="Enter Student Contact"></td>
+        </tr>
+    </table>
+    <button (click)="createStudent()">Create</button>
+</div>

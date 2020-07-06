@@ -1,0 +1,19 @@
+<div>
+    <h3>Student List</h3>
+</div>
+<div class="table-responsive">
+    <table class="table table-borderless table-hover">
+        <tr class="table-info">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Phone</th>
+        </tr>
+        <tr *ngFor="let student of students">
+            <td>{{student.studentId}}</td>
+            <td>{{student.studentName}}</td>
+            <td>{{student.studentCourse}}</td>
+            <td>{{student.studentPhone}}</td>
+        </tr>
+    </table>
+</div>
